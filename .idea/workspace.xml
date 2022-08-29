@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="428077e5-1f0b-49c6-98fd-53c16963e956" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[XELNW19906011509]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hHKXg5KMsJZXROgoqMhDtwS9Xa" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_XL_API_27" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-02-21T14:51:21.345Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
+    <property name="android-custom-viewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-viewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/widget/ImageView.java_SELECTED" value="ImageView" />
+    <property name="android-custom-viewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/widget/TextView.java_SELECTED" value="TextView" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/widget/ImageView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/MegaPixel/AppData/Local/Android/sources/android-29/android/widget/TextView.java_selected" value="Custom views" />
+    <property name="settings.editor.selected.configurable" value="test.recorder" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.1824250882">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-765878985">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.1962339911">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1831756037">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-19013009">
+      <recent name="com.megapixel.trashbench" />
+      <recent name="com.megapixel.trashbench.FragmentsQuestions" />
+    </key>
+    <key name="android.template.959361878">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.1122195675">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.megapixel.trashbench" />
+      <recent name="com.megapixel.trashbench.EmojiStatusActivity" />
+    </key>
+    <key name="android.template.782117178">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-507688334">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1011712842">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.384884534">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1740859511">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.804527646">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.1831735734">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1603525096">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1507766567">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\gm\TrashBench\app" />
+      <recent name="C:\gm\TrashBench\app\src\main\res\values-ru" />
+    </key>
+    <key name="android.template.-1769161633">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-693286784">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.1987469032">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1706815765">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1077695365">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-895359629">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.80314565">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-2106093108">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.megapixel.trashbench.Adapter" />
+      <recent name="com.megapixel.trashbench.Model" />
+    </key>
+    <key name="android.template.-1654519025">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1831135502">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-811711536">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.1995921604">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\gm\TrashBench\app\src\main\assets\fonts" />
+      <recent name="C:\gm\TrashBench\app\src\main\res\layout" />
+      <recent name="C:\gm\TrashBench\app\src\main\res\values-ru" />
+      <recent name="C:\gm\TrashBench\app\src\main\res\values" />
+    </key>
+    <key name="android.template.-1978633880">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1326887665">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.523247967">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-1573878205">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+    <key name="android.template.-50262268">
+      <recent name="com.megapixel.trashbench" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="TrashBench.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="428077e5-1f0b-49c6-98fd-53c16963e956" name="Default Changelist" comment="" />
+      <created>1599662618739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599662618739</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1720" height="840" key="AVDManager" timestamp="1661771218637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="100" width="1720" height="840" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1661771218637" />
+    <state x="662" y="329" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog" timestamp="1661770739523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="329" key="com.android.tools.idea.run.deployment.ModifyDeviceSetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1661770739523" />
+  </component>
+</project>
