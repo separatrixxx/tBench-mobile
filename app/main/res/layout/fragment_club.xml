@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ClubFragment"
+    android:clickable="true"
+    android:background="@color/colorWhite"
+    android:focusable="true">
+
+
+
+    <RelativeLayout
+        android:id="@+id/club_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <ImageView
+            android:id="@+id/club_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/back_club_fragment"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp">
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/edit_club"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/settings"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone">
+        </Button>
+
+
+
+        <TextView
+            android:id="@+id/club_fragment_club_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/club_name"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toStartOf="@+id/club_image_layout"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@+id/club_fragment_club_description">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/club_fragment_club_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/club_description"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/club_image_layout"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="25dp">
+        </TextView>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/club_image_layout"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/club_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/club_icon"
+                app:civ_border_color="@color/colorMain"
+                app:civ_border_width="3dp">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/line_second"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/club_title_layout">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/joiners_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_second">
+
+
+
+        <RelativeLayout
+            android:id="@+id/join_btn_layout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/join_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/user_join"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_centerHorizontal="true">
+            </Button>
+
+
+            <TextView
+                android:id="@+id/join_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/join"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                android:textSize="14sp"
+                android:layout_below="@+id/join_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/line_up"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLight"
+            android:layout_below="@+id/join_btn_layout">
+        </ImageView>
+
+
+        <RelativeLayout
+            android:id="@+id/joined_btn_layout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible">
+
+
+            <Button
+                android:id="@+id/joined_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/user_joined"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_centerHorizontal="true">
+            </Button>
+
+
+            <TextView
+                android:id="@+id/joined_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/joined"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                android:textSize="14sp"
+                android:layout_below="@+id/joined_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/line_up"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_joiners"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorAccent">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/members"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryDark">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/more_club_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_info_profile"
+            android:textColor="@color/colorMain"
+            android:textStyle="bold"
+            android:layout_marginTop="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:visibility="visible">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/line_third"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/joiners_layout">
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/alpha_screen_club"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:visibility="gone">
+    </ImageView>
+
+
+</RelativeLayout>

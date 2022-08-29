@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TargetsActivity"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/targets_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/back_target"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:text="@string/targets"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/line_up"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/targets_toolbar">
+    </ImageView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_targets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_up">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ImageView
+        android:id="@+id/add_target"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/add_story">
+    </ImageView>
+
+
+
+    <ImageView
+        android:id="@+id/target_big"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/target_big"
+        android:paddingEnd="10dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        tools:ignore="RtlSymmetry">
+    </ImageView>
+
+
+</RelativeLayout>

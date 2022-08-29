@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopMPActivity"
+    app:cardCornerRadius="15dp"
+    android:padding="10dp"
+    android:layout_margin="1dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/club_info"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/name_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/club_name_2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMain"
+                android:visibility="visible"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/name_club_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="3">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLight"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp">
+
+
+            <TextView
+                android:id="@+id/description_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/club_description_2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMain"
+                android:visibility="visible"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/description_club_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="3">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLight"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/total_followings_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/followings_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMain"
+                android:visibility="visible">
+            </TextView>
+
+            <TextView
+                android:id="@+id/followings_profile_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/members"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLight"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLight"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="80dp">
+        </ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/owner_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/owner"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorMain"
+                android:visibility="visible">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/owner_contacts_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-10dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/owner_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/profile_image"
+                android:padding="5dp"
+                app:civ_border_color="@color/colorMain"
+                app:civ_border_width="2dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <TextView
+                android:id="@+id/owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name_register"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="visible"
+                android:layout_marginStart="7dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/target_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/colorWhite"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+
+                <TextView
+                    android:id="@+id/publisher_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/targets"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:paddingEnd="100dp"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/time_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/target_field_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/colorAccent"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+
+                <TextView
+                    android:id="@+id/publisher_target_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/targets"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:paddingEnd="100dp"
+                    tools:ignore="RtlSymmetry">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/time_target_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/options_target"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/delete_target"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/delete_message"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/confirm_delete_target"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/confirm_delete_message"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/cancel_target"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/close_message"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="3dp">
+                </ImageView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

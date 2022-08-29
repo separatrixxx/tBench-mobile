@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/club_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/club_image_search_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/club_image_search"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:src="@drawable/profile_image"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorMain"
+                    app:civ_border_width="2dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/club_image_search_layout"
+                android:layout_centerVertical="true">
+
+
+                <TextView
+                    android:id="@+id/club_name_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name_register"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/club_members_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/club_name_search">
+                </TextView>
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/members"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/club_name_search"
+                    android:layout_toEndOf="@+id/club_members_search"
+                    android:layout_marginStart="5dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/join_club_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/user_join"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/joined_club_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/user_joined"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

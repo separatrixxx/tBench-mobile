@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoveryAccountActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/oops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oops"
+        android:textSize="30sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/oops"
+        android:layout_margin="5dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/account_has_been_deleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_has_been_deleted"
+        android:textSize="18sp"
+        android:textColor="@color/accent"
+        android:textStyle="bold"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/restore_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restore_it"
+        android:textSize="14sp"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold"
+        android:layout_below="@+id/account_has_been_deleted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/restore_it"
+        android:layout_above="@+id/restore_layout"
+        android:src="@drawable/sad_emoji"
+        android:layout_centerInParent="true">
+    </ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/restore_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="1000dp"
+                android:layout_height="60dp"
+                android:text="@string/logout"
+                android:layout_gravity="center"
+                android:textColor="@color/accent"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white">
+            </Button>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/restore_btn_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/restore_btn"
+                android:layout_width="1000dp"
+                android:layout_height="60dp"
+                android:text="@string/restore"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/accent">
+            </Button>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSettingsActivity"
+    android:background="@color/colorWhite">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/edit_profile"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/save_info_profile_btn"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/forward">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/edit_profile_toolbar">
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/profile_image_view_profile_frag_layout"
+                android:layout_alignParentBottom="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:cardCornerRadius="30dp">
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:cardCornerRadius="0dp"
+                    android:layout_marginTop="50dp"
+                    >
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_image_view_profile_frag_layout"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_view_profile_frag"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/profile_image"
+                    android:layout_centerInParent="true"
+                    app:civ_border_color="@color/colorMain"
+                    app:civ_border_width="3dp"
+                    android:layout_gravity="center_horizontal">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/info_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_info_profile"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/profile_image_view_profile_frag_layout"
+                android:layout_marginLeft="40dp">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/info_profile_frag"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_main"
+                android:hint="@string/profile_info_profile"
+                android:inputType="text"
+                android:textColorHint="@color/colorLight"
+                android:textColor="@color/accent"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/info_text_view">
+            </EditText>
+
+            <TextView
+                android:id="@+id/city_text_view"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/city_edit_profile"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/info_profile_frag">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/city_profile_frag"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_main"
+                android:hint="@string/city_edit_profile"
+                android:inputType="text"
+                android:textColorHint="@color/colorLight"
+                android:textColor="@color/accent"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/city_text_view">
+            </EditText>
+
+            <TextView
+                android:id="@+id/birthday_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday_edit_profile"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/city_profile_frag">
+            </TextView>
+
+            <TextView
+                android:id="@+id/clear_birthday_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clear"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/city_profile_frag">
+            </TextView>
+
+            <TextView
+                android:id="@+id/birthday_profile_frag"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_main"
+                android:hint="@string/birthday_edit_profile"
+                android:inputType="text"
+                android:textColorHint="@color/colorLight"
+                android:textColor="@color/accent"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/birthday_text_view">
+            </TextView>
+
+            <TextView
+                android:id="@+id/specialty_text_view"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/specialty_profile"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/birthday_profile_frag">
+            </TextView>
+
+            <EditText
+                android:id="@+id/specialty_profile_frag"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/button_main"
+                android:hint="@string/specialty_profile"
+                android:inputType="text"
+                android:textColorHint="@color/colorLight"
+                android:textColor="@color/accent"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/specialty_text_view">
+            </EditText>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/registration_settings_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0FFFFFF"
+        android:visibility="gone">
+    </ImageView>
+
+
+    <ProgressBar
+        android:id="@+id/registration_settings_progress_bar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+    </ProgressBar>
+
+
+</RelativeLayout>

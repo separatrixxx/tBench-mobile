@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClubsActivity"
+    android:background="@color/white">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/clubs_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/back_clubs"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:text="@string/clubs"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/line_up"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/clubs_toolbar">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/search_club_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_up"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/club_edit_text_layout"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/club_edit_text"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/search_fragment"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/colorLight"
+                android:background="#00ffffff"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry">
+
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/clubs_search_voice_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/microphone">
+            </ImageView>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/add_club"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add_story"
+            android:padding="7dp"
+            android:layout_alignParentEnd="true">
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/line_search"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/search_club_layout">
+    </ImageView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clubs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_search"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clubs_join_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_search"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <FrameLayout
+        android:id="@+id/clubs_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</RelativeLayout>

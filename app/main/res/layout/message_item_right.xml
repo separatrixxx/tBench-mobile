@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:visibility="gone"
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <TextView
+            android:id="@+id/show_text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="testing msg"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_right">
+        </TextView>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="10dp"
+            android:layout_below="@+id/show_text_message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:visibility="gone">
+        </TextView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/right_image_card_view"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/right_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop">
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/text_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/show_text_message"
+            android:visibility="gone">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_seen"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:src="@drawable/sent"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/show_text_message"
+            android:layout_marginTop="15dp"
+            android:visibility="gone">
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/options_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:background="@drawable/background_options"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/delete_messages"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete_message"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/confirm_delete_messages"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/confirm_delete_message"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp">
+            </ImageView>
+
+
+            <ImageView
+                android:id="@+id/cancel_messages"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/close_message"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp">
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/options_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/right_image_card_view"
+            android:background="@drawable/background_options"
+            android:layout_marginRight="-30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/delete_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete_message"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/confirm_delete_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/confirm_delete_message"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
+            </ImageView>
+
+
+            <ImageView
+                android:id="@+id/cancel_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/close_message"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp">
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <Button
+        android:id="@+id/semicircle"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:background="@drawable/semicircle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+    </Button>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/white_background_code">
+    </ImageView>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/smooth_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/smooth_background"
+        android:visibility="gone">
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/circle_layout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/semicircle"
+        android:layout_marginTop="70dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/circle"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/circle"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/circle_small"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/circle_small"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+            </Button>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/circle_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/search"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/circle_notifications"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/notifications"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/circle_add_post"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/add_post"
+                android:layout_below="@+id/circle_search"
+                android:layout_marginStart="35dp"
+                android:visibility="gone">
+            </Button>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/notifications_content_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/notifications"
+                android:visibility="visible">
+            </ImageView>
+
+
+            <ImageView
+                android:id="@+id/notifications_be"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_notifications"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"
+                android:visibility="gone">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/search_content_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/search"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="12dp"
+            android:visibility="visible">
+        </ImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_content_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/profile_image"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="12dp"
+            android:visibility="visible">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+
+
+
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress_bar"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_above="@+id/nav_view"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="10dp">-->
+<!--    </ProgressBar>-->
+
+
+
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/white"-->
+<!--        app:menu="@menu/bottom_nav_menu"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        />-->
+
+</RelativeLayout>

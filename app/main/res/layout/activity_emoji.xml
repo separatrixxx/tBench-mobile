@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmojiActivity"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/emoji_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/back_emoji"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:text="@string/emoji2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/line_up"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/emoji_toolbar">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/select_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_up"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/select_emoji"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="true">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/display_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_emoji"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/displayed_emoji"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/display_emoji"
+        android:background="@color/colorLight"
+        android:layout_margin="10dp"
+        android:visibility="visible">
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:padding="1dp"
+            android:layout_marginBottom="20dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginStart="1dp">
+
+                <ImageView
+                    android:id="@+id/face1_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face1_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face1_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face1_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/face2_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face2_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face2_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face2_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/face3_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face3_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face3_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/face3_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/crown_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/crown_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/crown_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/crown_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:padding="1dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginStart="1dp">
+
+                <ImageView
+                    android:id="@+id/heart_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/heart_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/heart_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/heart_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/game_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/game_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/game_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/game_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/gift_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/gift_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/gift_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/gift_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="1dp">
+
+                <ImageView
+                    android:id="@+id/burger_emoji"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/burger_emoji"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/burger_emoji_set"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/burger_emoji_set"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

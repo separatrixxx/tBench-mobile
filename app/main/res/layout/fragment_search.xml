@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment"
+    android:background="@color/colorWhite">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="6dp"
+        android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:id="@+id/search_edit_text_layout"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/search_fragment"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/colorLight"
+                android:background="#00ffffff"
+                android:paddingStart="15dp"
+                tools:ignore="RtlSymmetry">
+
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/search_voice_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/microphone">
+            </ImageView>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/search_toolbar">
+    </ImageView>
+
+
+
+    <ImageView
+        android:id="@+id/search_big"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/search_big"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+    </ImageView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/line">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

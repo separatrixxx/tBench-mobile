@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/help_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/back_help"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/back">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="15dp"
+                android:text="@string/help"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/line_up"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:layout_below="@+id/help_toolbar">
+    </ImageView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_up"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_questions"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/gq1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q6"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/gq2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q7"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/gq3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q10"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/aq1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/aq2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/aq3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/aq4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q4"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/aq5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q9"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/messages_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mq1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/mq2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q11"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/mq3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q12"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/mq4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q13"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/mq5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q14"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+            <Button
+                android:id="@+id/mq6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q15"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/pq1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/q8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13sp"
+                android:gravity="left|center_vertical"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/white"
+                tools:targetApi="lollipop"
+                tools:ignore="RtlHardcoded">
+            </Button>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any_questions"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:layout_margin="10dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/questions_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</RelativeLayout>

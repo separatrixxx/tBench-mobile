@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoryActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/image_story"
+        android:layout_width="400dp"
+        android:layout_height="480dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover"
+        android:contentDescription="@null">
+    </ImageView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <View
+            android:id="@+id/reverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </View>
+
+        <View
+            android:id="@+id/skip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </View>
+
+
+    </LinearLayout>
+    
+    
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/stories_progress"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="top"
+        android:layout_marginTop="10dp">
+    </jp.shts.android.storiesprogressview.StoriesProgressView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/story_profile_image"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/profile_image"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1.5dp"
+            android:padding="5dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <LinearLayout
+            android:id="@+id/linear_user"
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/story_profile_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/story_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name_register"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorMain">
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/heart"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/heart_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/game"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/game_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/gift"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/gift_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face1"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/face1_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face2"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/face2_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/face3"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/face3_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/crown"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/crown_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/burger"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/burger_status"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/mp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/megapixel_white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/check_mark"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/check_mark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:visibility="gone">
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/story_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username_profile"
+                android:textSize="11dp"
+                android:textColor="@color/colorWhite">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/options_story"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/options_circle_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="7dp"
+            android:visibility="gone">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/story_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/confirm_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/confirm_delete"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/story_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/cancel"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="55dp">
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="12dp"
+            android:src="@drawable/seen"
+            android:layout_gravity="center">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/seen_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_marginStart="7dp">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

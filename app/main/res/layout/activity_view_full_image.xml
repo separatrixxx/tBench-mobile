@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".ViewFullImageActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_viewer_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints"
+        android:layout_centerInParent="true">
+
+
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center">
+        </ProgressBar>
+
+
+        <ImageView
+            android:id="@+id/image_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
