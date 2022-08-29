@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "201849544302",
+    "firebase_url": "https://trashbench.firebaseio.com",
+    "project_id": "trashbench",
+    "storage_bucket": "trashbench.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201849544302:android:46d3929b5230b55c1ed07f",
+        "android_client_info": {
+          "package_name": "com.megapixel.trashbench"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201849544302-rehkhvaonb28a1ce6k1j8m51i4taeoeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVQUXH3_bnMZVyfiHu2z_2Bb_B77saeDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201849544302-rehkhvaonb28a1ce6k1j8m51i4taeoeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
